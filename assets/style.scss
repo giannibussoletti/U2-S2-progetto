@@ -1,4 +1,40 @@
 @import "./scss/functions";
 @import "./scss/variables";
 
+$dropdown-link-active-bg: rgb(140, 140, 140);
+$dropdown-link-active-color: white;
+
+nav {
+  ul {
+    li {
+      cursor: pointer;
+    }
+  }
+}
+
+.hiding-bar::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+h4 {
+  z-index: 100;
+  position: relative;
+}
+
+.hiding-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.arrow-right {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%);
+}
+
+.arrow-left {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%);
+}
+
+// $theme-colors: map-merge($theme-colors, $new-theme-colors);
+
 @import "./scss/bootstrap.scss";
