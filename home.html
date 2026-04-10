@@ -48,10 +48,10 @@
       <!-- FINE NAVBAR -->
     </header>
     <main>
+      <!-- TV SHOW & DROPDOWN BUTTON GENRE -->
+      <!-- TV SHOW TITLE -->
       <div class="container-fluid px-5">
         <div class="row mb-5">
-          <!-- TV SHOW & DROPDOWN BUTTON GENRE -->
-          <!-- TV SHOW TITLE -->
           <div class="col d-flex gap-4 align-content-center">
             <h1>TV Shows</h1>
             <!-- DROPDOWN MENU NEAR TITLE -->
@@ -75,20 +75,23 @@
           <div class="col text-end">Menu</div>
         </div>
       </div>
+      <!-- FINE TV SHOW -->
+
       <!-- TRENDING NOW SECTION -->
-      <div class="container-fluid px-5">
-        <div class="row position-relative">
+      <div class="container-fluid px-5 my-5">
+        <div class="row position-relative my-5">
+          <!-- TITOLO -->
           <div class="col-12 p-0 mb-2">
             <h4 class="fw-semibold text-light text-opacity-75">Trending Now</h4>
           </div>
-          <!-- INIZIO CAROSELLO -->
+          <!-- INIZIO CAROSELLO TRENDING -->
 
           <div
-            id="personal-carousel"
-            class="m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar w-100"></div>
+            id="trending-carousel"
+            class="smooth-carousel m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar w-100"></div>
           <!-- BUTTONS -->
           <span
-            onclick="rightMovement()"
+            onclick="rightMovement(0)"
             style="width: 5%"
             class="end-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-right"
             ><i
@@ -96,7 +99,7 @@
               style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
           </span>
           <span
-            onclick="leftMovement()"
+            onclick="leftMovement(0)"
             style="width: 5%"
             class="start-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-left">
             <i
@@ -104,7 +107,40 @@
               style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
           </span>
         </div>
-        <!-- FINE CAROSELLO -->
+        <!-- FINE CAROSELLO TRENDING -->
+        <!-- WATCH IT AGAIN SECTION -->
+
+        <!--  -->
+        <div class="row position-relative my-5">
+          <!-- TITOLO -->
+          <div class="col-12 p-0 mb-2">
+            <h4 class="fw-semibold text-light text-opacity-75">Trending Now</h4>
+          </div>
+          <!-- INIZIO CAROSELLO WATCH IT -->
+
+          <div
+            id="watch-again-carousel"
+            class="smooth-carousel m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar w-100"></div>
+          <!-- BUTTONS -->
+          <span
+            onclick="rightMovement(1)"
+            style="width: 5%"
+            class="end-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-right"
+            ><i
+              class="fa-solid fa-angle-right fa-2x mt-5"
+              style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
+          </span>
+          <span
+            onclick="leftMovement(1)"
+            style="width: 5%"
+            class="start-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-left">
+            <i
+              class="fa-solid fa-angle-left fa-2x mt-5"
+              style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
+          </span>
+        </div>
+
+        <!--  -->
       </div>
     </main>
     <footer>
