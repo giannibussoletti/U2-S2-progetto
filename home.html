@@ -85,35 +85,23 @@
 
           <div
             id="personal-carousel"
-            class="m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 flex-nowrap overflow-auto hiding-bar w-100"></div>
+            class="m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar w-100"></div>
           <!-- BUTTONS -->
           <span
+            onclick="rightMovement()"
             style="width: 5%"
-            class="end-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-right">
-            <a href="#altra-diapositiva"
-              ><i
-                class="fa-solid fa-angle-right fa-2x mt-5"
-                style="
-                  color: rgb(255, 255, 255);
-                  width: 100px;
-                  height: 50px;
-                  line-height: 1.5em;
-                "></i
-            ></a>
+            class="end-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-right"
+            ><i
+              class="fa-solid fa-angle-right fa-2x mt-5"
+              style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
           </span>
           <span
+            onclick="leftMovement()"
             style="width: 5%"
             class="start-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-left">
-            <a href="#start-carousel"
-              ><i
-                class="fa-solid fa-angle-left fa-2x mt-5"
-                style="
-                  color: rgb(255, 255, 255);
-                  width: 100px;
-                  height: 50px;
-                  line-height: 1.5em;
-                "></i
-            ></a>
+            <i
+              class="fa-solid fa-angle-left fa-2x mt-5"
+              style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
           </span>
         </div>
         <!-- FINE CAROSELLO -->
@@ -134,5 +122,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 @import "./scss/functions";
 @import "./scss/variables";
 
+// Background Genres Dropdown menu
 $dropdown-link-active-bg: rgb(140, 140, 140);
 $dropdown-link-active-color: white;
 
@@ -12,21 +13,28 @@ nav {
   }
 }
 
-.hiding-bar::-webkit-scrollbar {
-  width: 0;
-  background-color: transparent;
-}
-
+// Carousle title
 h4 {
   z-index: 100;
   position: relative;
+}
+
+// Hiding carousel scrollbar
+.hiding-bar::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
 }
 
 .hiding-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+// smooth-scroll carousel
+#personal-carousel {
+  scroll-behavior: smooth;
+}
 
+// Arrow carousel background
 .arrow-right {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 70%);
 }
