@@ -3,19 +3,23 @@ nav ul li {
   cursor: pointer;
 }
 
-.hiding-bar::-webkit-scrollbar {
-  width: 0;
-  background-color: transparent;
-}
-
 h4, .h4 {
   z-index: 100;
   position: relative;
 }
 
+.hiding-bar::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
 .hiding-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+#personal-carousel {
+  scroll-behavior: smooth;
 }
 
 .arrow-right {
