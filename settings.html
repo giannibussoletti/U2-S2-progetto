@@ -4,65 +4,183 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/override.css" />
+    <script src="https://kit.fontawesome.com/4cddab353b.js" crossorigin="anonymous"></script>
+    <title>Netflix</title>
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <body class="bg-body-tertiary">
+    <header class="bg-black">
+      <div class="container-fluid text-white">
+        <!-- INIZIO NAVBAR -->
+        <div class="row mx-2">
+          <div class="col-auto col-md-10 col-lg-6 px-0 flex-grow-1">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-black px-2" data-bs-theme="dark">
+              <a class="navbar-brand 1" style="height: 55px" href="#"
+                ><img class="w-auto h-100" src="./assets/img/netflix_logo.png" alt="Logo Netflix"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                  </li>
                 </ul>
+              </div>
+            </nav>
+          </div>
+          <div
+            class="col-3 col-sm-2 col-md-1 col-lg-5 px-0 position-relative d-flex align-items-center justify-content-end">
+            <ul
+              class="mt-2 position-absolute top-0 d-flex mb-0 d-flex list-inline gap-3 align-items-center">
+              <li class="d-none d-lg-block">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255)"></i>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              <li class="d-none d-lg-block">KIDS</li>
+              <li class="d-none d-lg-block">
+                <i class="fa-solid fa-bell" style="color: rgb(255, 255, 255)"></i>
+              </li>
+              <li class="d-flex flex-nowrap gap-1 align-items-center" style="height: 55px">
+                <img class="h-100 p-2" src="./assets/img/p-icon/avatar.png" alt="" />
+                <i class="fa-solid fa-sort-down" style="color: rgb(255, 255, 255)"></i>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
+            <!-- FINE NAVBAR -->
           </div>
         </div>
-      </nav>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="container">
+        <div class="row">
+          <!-- ACCOUNT -->
+          <div class="col text-center text-md-start border-secondary border-bottom mt-5 pb-3 mb-3">
+            <h1>Account</h1>
+          </div>
+        </div>
+        <!-- MEMBER & ACCOUNT -->
+        <div class="row">
+          <!-- MEMBERSHIP -->
+          <div class="col-12 col-md-4 text-center text-md-start mb-4 ms-md-0">
+            <h5 class="text-uppercase text-secondary">Membership &amp; billing</h5>
+            <button
+              class="btn border-0 bg-dark bg-opacity-10 rounded-0 px-4 shadow-sm border-bottom border-secondary border-opacity-50 border-1">
+              Cancel Membership
+            </button>
+          </div>
+          <!-- STUDENT -->
+          <div class="col-12 col-md-8 mb-3">
+            <div class="row mb-3 border-secondary text-center text-sm-start border-bottom">
+              <div class="col-12 col-sm-6 p-0">
+                <p class="mb-2 fw-bold">student&#64;strive.school</p>
+                <p class="mb-2 text-secondary">Password:*******</p>
+                <p class="mb-2 text-secondary">Phone: 321 044 1279</p>
+              </div>
+              <div class="col-12 col-sm-6 text-center text-sm-end">
+                <p class="mb-2 text-primary">Change account email</p>
+                <p class="mb-2 text-primary">Change password</p>
+                <p class="mb-2 text-primary">Change phone number</p>
+              </div>
+            </div>
+            <!-- PAY PAL & PAYMENT -->
+            <div class="row mb-3 border-secondary border-bottom">
+              <div class="col-12 col-sm-6 p-0 text-center text-sm-start mb-2 mb-sm-0">
+                <i class="fa-brands fa-paypal"></i>admin&#64;strive.school
+              </div>
+              <div class="p-0 text-center text-sm-end col-12 col-sm-6">
+                <p class="mb-2 text-primary">Update payment info</p>
+                <p class="mb-2 text-primary">Billing details</p>
+              </div>
+            </div>
+            <!-- REDEEM GIFT -->
+            <div class="row">
+              <div class="col p-0 text-center text-sm-end">
+                <p class="mb-2 text-primary">Redeem gift card or promo code</p>
+                <p class="mb-2 text-primary">Where to buy gitt cards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PLAN DETAILS -->
+        <div class="row py-3 mb-3 border-secondary border-top border-bottom">
+          <div class="col-12 col-sm-4 p-0 text-center text-sm-start">
+            <h5 class="text-uppercase text-secondary">plan details</h5>
+          </div>
+          <div class="col-12 col-sm-4 p-0 text-center text-sm-start">
+            <span class="mb-2 fw-bold">Premium</span>
+            <img src="./assets/img/icon-tag-4K.png" alt="" />
+          </div>
+          <div class="col-12 col-sm-4 p-0 text-sm-end text-center text-primary">Change plan</div>
+        </div>
+        <!-- SETTINGS ROW -->
+        <div class="row border-bottom border-secondary pb-3 mb-4">
+          <div class="col-12 col-sm-6 col-md-4 p-0">
+            <h5 class="text-uppercase text-center text-sm-start text-secondary">settings</h5>
+          </div>
+          <!-- SETTINGS MENU -->
+          <div class="col-12 col-sm-6 col-md-8 p-0 text-center text-sm-end text-md-start">
+            <p class="mb-2 text-primary">Parental controls</p>
+            <p class="mb-2 text-primary">Test participation</p>
+            <p class="mb-2 text-primary">Manage download devices</p>
+            <p class="mb-2 text-primary">Activate a device</p>
+            <p class="mb-2 text-primary">Recent device streaming activity</p>
+            <p class="mb-2 text-primary">Sign out of all devices</p>
+          </div>
+        </div>
+        <!-- PROFILE ROW -->
+        <div class="row mb-3">
+          <div class="text-center text-sm-start col-sm-4 p-0">
+            <h5 class="text-uppercase text-secondary">my profile</h5>
+          </div>
+          <div
+            class="col-12 col-sm-8 text-sm-end col-md-4 p-0 text-center text-md-start mb-2 m-md-0">
+            <img style="width: 30px" src="./assets/img/p-icon/avatar.png" alt="" /><span
+              class="fw-bold ms-3"
+              >Strive Student</span
+            >
+          </div>
+          <div class="col-12 col-md-4 p-0 text-center text-sm-end">
+            <p class="mb-2 text-primary">Manage profiles</p>
+            <p class="mb-2 text-primary">Add profile email</p>
+          </div>
+        </div>
+        <!-- LANGUAGE ROW -->
+        <div class="row">
+          <div
+            class="col-12 col-md-4 offset-0 text-center text-sm-end text-md-start offset-md-4 p-0">
+            <p class="mb-2 text-primary">Language</p>
+            <p class="mb-2 text-primary">Playback settings</p>
+            <p class="mb-2 text-primary">Subtitle appearance</p>
+          </div>
+          <div class="col text-center text-sm-end text-md-start p-0">
+            <p class="mb-2 text-primary">Viewing activity</p>
+            <p class="mb-2 text-primary">Ratings</p>
+          </div>
+        </div>
+      </div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
