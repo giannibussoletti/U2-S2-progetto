@@ -1,5 +1,5 @@
 @charset "UTF-8";
-nav ul li {
+nav ul li a {
   cursor: pointer;
 }
 
@@ -20,6 +20,21 @@ h4, .h4 {
 
 .smooth-carousel {
   scroll-behavior: smooth;
+}
+
+.smooth-carousel img {
+  transition: all 500ms ease;
+}
+
+.smooth-carousel img:hover {
+  transform: scale(0.95);
+  z-index: 10;
+  position: relative;
+}
+
+.arrow-left,
+.arrow-right {
+  z-index: 10;
 }
 
 .arrow-right {
