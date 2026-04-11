@@ -5,6 +5,10 @@
 $dropdown-link-active-bg: rgb(140, 140, 140);
 $dropdown-link-active-color: white;
 
+// CHECKBOXS
+$form-check-input-checked-bg-color: #141414;
+$form-check-input-checked-border-color: $secondary;
+
 nav {
   ul {
     li {
@@ -57,6 +61,35 @@ h4 {
 
 .arrow-left {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+// Profile Page
+.profile-body {
+  background: #141414;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(20, 20, 20, 1) 92%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#checkbox-css {
+  .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    input {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 @import "./scss/bootstrap.scss";
