@@ -14,72 +14,64 @@
       <!--  -->
       <div class="container-fluid">
         <!-- INIZIO NAVBAR -->
-        <nav class="navbar navbar-dark navbar-expand-lg bg-black px-2" data-bs-theme="dark">
-          <a class="navbar-brand 1" style="height: 55px" href="#"
-            ><img class="w-auto h-100" src="./assets/img/netflix_logo.png" alt="Logo Netflix"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="row mx-2">
+          <div class="col-auto col-md-10 col-lg-6 px-0 flex-grow-1">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-black px-2" data-bs-theme="dark">
+              <a class="navbar-brand 1" style="height: 55px" href="#"
+                ><img class="w-auto h-100" src="./assets/img/netflix_logo.png" alt="Logo Netflix"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recently Added</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My List</a>
-              </li>
-            </ul>
-            <!-- PROFILO DESKTOP -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div
+            class="col-3 col-sm-2 col-md-1 col-lg-5 px-0 position-relative d-flex align-items-center justify-content-end">
             <ul
-              class="d-none d-lg-flex mb-0 d-flex list-inline gap-3 align-content-center justify-content-start align-items-center">
-              <li>
+              class="mt-2 position-absolute top-0 d-flex mb-0 d-flex list-inline gap-3 align-items-center">
+              <li class="d-none d-lg-block">
                 <i class="fa-solid fa-magnifying-glass" style="color: rgb(255, 255, 255)"></i>
               </li>
-              <li>KIDS</li>
-              <li><i class="fa-solid fa-bell" style="color: rgb(255, 255, 255)"></i></li>
-              <li style="height: 55px">
+              <li class="d-none d-lg-block">KIDS</li>
+              <li class="d-none d-lg-block">
+                <i class="fa-solid fa-bell" style="color: rgb(255, 255, 255)"></i>
+              </li>
+              <li class="d-flex flex-nowrap gap-1 align-items-center" style="height: 55px">
                 <img class="h-100 p-2" src="./assets/img/p-icon/avatar.png" alt="" />
                 <i class="fa-solid fa-sort-down" style="color: rgb(255, 255, 255)"></i>
               </li>
             </ul>
-            <!-- PROFILO MOBILE -->
-            <ul
-              class="mb-0 d-lg-none list-inline gap-3 align-content-center justify-content-start align-items-center order-1">
-              <li style="height: 55px">
-                <img class="h-100 p-2" src="./assets/img/p-icon/avatar.png" alt="" />
-              </li>
-              <li>
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search" />
-                  <button class="btn btn-outline-secondary" type="submit">Search</button>
-                </form>
-              </li>
-            </ul>
+
+            <!-- FINE NAVBAR -->
           </div>
-        </nav>
-        <!-- FINE NAVBAR -->
+        </div>
       </div>
       <!--  -->
       <!--  -->
