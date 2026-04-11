@@ -50,10 +50,10 @@
     <main>
       <!-- TV SHOW & DROPDOWN BUTTON GENRE -->
       <!-- TV SHOW TITLE -->
-      <div class="container-fluid px-5">
+      <div class="container-fluid px-5 pt-4">
         <div class="row mb-5">
-          <div class="col d-flex gap-4 align-content-center">
-            <h1>TV Shows</h1>
+          <div class="col d-flex gap-4 align-content-center px-0">
+            <h1 class="fw-semibold">TV Shows</h1>
             <!-- DROPDOWN MENU NEAR TITLE -->
             <div class="dropdown d-flex align-items-center">
               <button
@@ -72,14 +72,22 @@
             </div>
           </div>
           <!-- ICONE MENU SULLA DESTRA -->
-          <div class="col text-end">Menu</div>
+          <div class="col d-none d-md-block justify-content-center text-end py-3 px-0">
+            <span class="p-1 border border-white"
+              ><a href="#"
+                ><i class="fa-solid fa-bars-staggered" style="color: #ffffff"></i></a></span
+            ><a href="#"
+              ><span class="p-1 border border-secondary"
+                ><i class="fa-solid fa-grip" style="color: #808080"></i></span
+            ></a>
+          </div>
         </div>
       </div>
       <!-- FINE TV SHOW -->
-
+      <!--  -->
       <!-- TRENDING NOW SECTION -->
       <div class="container-fluid px-5 my-5">
-        <div class="row position-relative my-5">
+        <div class="row position-relative my-5 pb-3">
           <!-- TITOLO -->
           <div class="col-12 p-0 mb-2">
             <h4 class="fw-semibold text-light text-opacity-75">Trending Now</h4>
@@ -88,7 +96,7 @@
 
           <div
             id="trending-carousel"
-            class="smooth-carousel m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar w-100"></div>
+            class="p-0 smooth-carousel m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar"></div>
           <!-- BUTTONS -->
           <span
             onclick="rightMovement(0)"
@@ -108,19 +116,17 @@
           </span>
         </div>
         <!-- FINE CAROSELLO TRENDING -->
-        <!-- WATCH IT AGAIN SECTION -->
-
-        <!--  -->
-        <div class="row position-relative my-5">
+        <!-- INIZIO IT AGAIN SECTION -->
+        <div class="row position-relative my-5 pb-3">
           <!-- TITOLO -->
           <div class="col-12 p-0 mb-2">
-            <h4 class="fw-semibold text-light text-opacity-75">Trending Now</h4>
+            <h4 class="fw-semibold text-light text-opacity-75">Watch It Again</h4>
           </div>
           <!-- INIZIO CAROSELLO WATCH IT -->
 
           <div
             id="watch-again-carousel"
-            class="smooth-carousel m-0 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar w-100"></div>
+            class="p-0 smooth-carousel m-0 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar"></div>
           <!-- BUTTONS -->
           <span
             onclick="rightMovement(1)"
@@ -139,18 +145,82 @@
               style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
           </span>
         </div>
-
+        <!-- FINE WATCH IT AGAIN -->
         <!--  -->
+        <!-- INIZIO NEW RELEASES -->
+        <div class="row position-relative my-5 pb-3">
+          <!-- TITOLO -->
+          <div class="col-12 p-0 mb-2">
+            <h4 class="fw-semibold text-light text-opacity-75">New Releases</h4>
+          </div>
+          <!-- INIZIO CAROSELLO NEW RELEASES -->
+
+          <div
+            id="new-releases-carousel"
+            class="p-0 smooth-carousel m-0 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-5 flex-nowrap overflow-auto hiding-bar"></div>
+          <!-- BUTTONS -->
+          <span
+            onclick="rightMovement(2)"
+            style="width: 5%"
+            class="end-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-right"
+            ><i
+              class="fa-solid fa-angle-right fa-2x mt-5"
+              style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
+          </span>
+          <span
+            onclick="leftMovement(2)"
+            style="width: 5%"
+            class="start-0 p-0 position-absolute top-0 text-end h-100 d-flex justify-content-center align-items-center arrow-left">
+            <i
+              class="fa-solid fa-angle-left fa-2x mt-5"
+              style="color: rgb(255, 255, 255); width: 100px; height: 50px; line-height: 1.5em"></i>
+          </span>
+        </div>
+        <!-- FINE NEW RELEASES -->
       </div>
     </main>
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="col-12">a</div>
-          <div class="col">Ciao</div>
-          <div class="col">Ciao</div>
-          <div class="col">Ciao</div>
-          <div class="col">Ciao</div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 text-center text-md-start">
+          <div class="col w-100 my-5">
+            <i class="me-3 fa-brands fa-square-facebook fa-2xl" style="color: #808080"></i
+            ><i class="me-3 fa-brands fa-instagram fa-2xl" style="color: #808080"></i
+            ><i class="me-3 fa-brands fa-twitter fa-2xl" style="color: #808080"></i>
+            <i class="me-3 fa-brands fa-youtube fa-2xl" style="color: #808080"></i>
+          </div>
+          <div class="col text-light text-opacity-75">
+            <p>Audio and Subtitles</p>
+            <p>Media Center</p>
+            <p>Privacy</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="col text-light text-opacity-75">
+            <p>Audio Dcscription</p>
+            <p>Investor Relations</p>
+            <p>Legal Notices</p>
+          </div>
+          <div class="col text-light text-opacity-75">
+            <p>Help Center</p>
+            <p>Jobs</p>
+            <p>Cookie Preferences</p>
+          </div>
+          <div class="col text-light text-opacity-75">
+            <p>Gift Cards</p>
+            <p>Terms of Use</p>
+            <p>Corporate Information</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 text-center text-md-start">
+          <div class="col mt-4">
+            <button
+              type="button"
+              class="btn btn-outline-secondary rounded-0 border border-2 border-secondary">
+              Service Code
+            </button>
+          </div>
+          <div class="col pt-4 text-light text-opacity-75">
+            <p>&#169; 1997-2019 Netflix, inc.</p>
+          </div>
         </div>
       </div>
     </footer>
