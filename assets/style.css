@@ -45,6 +45,27 @@ h4, .h4 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
 }
 
+.profile-body {
+  background: #141414;
+  background: linear-gradient(0deg, rgb(20, 20, 20) 0%, rgb(20, 20, 20) 92%, rgb(0, 0, 0) 100%);
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#checkbox-css .form-check {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+#checkbox-css .form-check input {
+  width: 40px;
+  height: 40px;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -2307,8 +2328,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-check-input:checked {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #141414;
+  border-color: #6c757d;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
