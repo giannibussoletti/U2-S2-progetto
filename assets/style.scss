@@ -18,6 +18,32 @@ nav {
     }
   }
 }
+// SLIDER FULL HEIGHT
+.fh-carousel.carousel,
+.fh-carousel.carousel-inner,
+.fh-carousel.carousel-item {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-1 {
+  background-image: url(./img/fh-slider/django-unchained.jpg);
+}
+.slide-2 {
+  background-image: url(./img/fh-slider/knives-out-sfondo.jpg);
+}
+.slide-3 {
+  background-image: url(./img/fh-slider/frankenstein.jpg);
+}
+// END SLIDER
 
 .dropdown-toggle::after {
   display: none !important;
