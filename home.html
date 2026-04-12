@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/override.css" />
     <script src="https://kit.fontawesome.com/4cddab353b.js" crossorigin="anonymous"></script>
-    <title>Netflix</title>
+    <title>Netflix Clone</title>
   </head>
   <body class="bg-black text-white">
-    <header class="mb-3">
-      <!--  -->
-      <!-- NAVBAR -->
-      <div class="container-fluid bg-black">
+    <header class="position-relative vh-100 posi">
+      <div
+        style="z-index: 10"
+        class="container-fluid bg-black bg-opacity-50 text-white position-relative">
         <div class="row mx-2">
           <div class="col- p-0">
             <nav style="height: 55px" class="navbar-dark py-2 d-flex align-items-center">
@@ -25,11 +25,15 @@
                       type="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false">
-                      <i class="fa-solid fa-bars fa-xl"></i>
+                      <i class="fa-solid fa-bars fa-lg"></i>
                     </li>
                     <ul class="dropdown-menu mt-3 bg-black border border-2 border-light rounded-0">
                       <li>
-                        <a href="#" class="dropdown-item text-white text-decoration-none">Home</a>
+                        <a
+                          href="./home.html"
+                          class="dropdown-item text-white text-decoration-none opacity-75"
+                          >Home</a
+                        >
                       </li>
                       <li>
                         <a href="#" class="dropdown-item text-white text-decoration-none opacity-75"
@@ -57,7 +61,7 @@
                 <img class="h-100 me-3" src="./assets/img/netflix_logo.png" alt="" />
                 <ul class="mb-2 mb-lg-0 d-lg-flex list-inline gap-3 d-none">
                   <li>
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link opacity-75" href="./home.html">Home</a>
                   </li>
                   <li>
                     <a class="nav-link opacity-75" href="#">TV Shows</a>
@@ -92,7 +96,7 @@
                     <img class="h-100 p-2" src="./assets/img/p-icon/avatar.png" alt="" />
                   </li>
                   <ul class="dropdown-menu bg-black border border-2 border-light rounded-0">
-                    <li><a class="text-white dropdown-item" href="./settings.html">Settings</a></li>
+                    <li><a class="text-white dropdown-item" href="./home.html">Home</a></li>
                     <li><a class="text-white dropdown-item" href="./index.html">Log Out</a></li>
                   </ul>
                 </div>
@@ -101,6 +105,84 @@
           </div>
         </div>
       </div>
+
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+
+      <div
+        id="carouselExampleSlidesOnly"
+        class="fh-carousel carousel slide top-0 position-absolute"
+        data-bs-ride="carousel">
+        <div class="fh-carousel carousel-inner position-relative">
+          <div class="fh-carousel carousel-item slide-1 active" data-bs-interval="5000">
+            <div class="container ms-md-5 ps-md-5">
+              <div class="row mt-5 position-absolute" style="bottom: 25%">
+                <div class="col-12 col-lg-6 mb-5 text-center text-md-start">
+                  <img class="w-75" src="./assets/img/fh-slider/django-logo.png" alt="" />
+                </div>
+
+                <div class="col-12 text-center text-md-start">
+                  <button
+                    class="fw-bold px-5 py-2 text-capitalize text-black bg-white shadow-sm me-2 mb-2 rounded-2 border-0">
+                    play
+                  </button>
+                  <button
+                    class="fw-bold px-5 py-2 text-capitalize text-white bg-secondary rounded-2 border-0">
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fh-carousel carousel-item slide-2" data-bs-interval="5000">
+            <div class="container ms-md-5 ps-md-5">
+              <div class="row mt-5 position-absolute" style="bottom: 25%">
+                <div class="col-12 col-lg-6 mb-5 text-center text-md-start">
+                  <img class="w-75" src="./assets/img/fh-slider/knives-out-logo.png" alt="" />
+                </div>
+
+                <div class="col-12 text-center text-md-start">
+                  <button
+                    class="fw-bold px-5 py-2 text-capitalize text-black bg-white shadow-sm me-2 mb-2 rounded-2 border-0">
+                    play
+                  </button>
+                  <button
+                    class="fw-bold px-5 py-2 text-capitalize text-white bg-secondary rounded-2 border-0">
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fh-carousel carousel-item slide-3" data-bs-interval="5000">
+            <div class="container ms-md-5 ps-md-5">
+              <div class="row mt-5 position-absolute" style="bottom: 25%">
+                <div class="col-12 col-lg-6 mb-5 text-center text-md-start">
+                  <img class="w-75" src="./assets/img/fh-slider/logo-franken.png" alt="" />
+                </div>
+
+                <div class="col-12 text-center text-md-start">
+                  <button
+                    class="fw-bold px-5 py-2 text-capitalize text-black bg-white shadow-sm me-2 mb-2 rounded-2 border-0">
+                    play
+                  </button>
+                  <button
+                    class="fw-bold px-5 py-2 text-capitalize text-white bg-secondary rounded-2 border-0">
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
       <!--  -->
       <!--  -->
     </header>
